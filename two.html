@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Hover Effect</title>
+    <style>
+        .square {
+            stroke: black;
+            fill: none;
+            transition: fill 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <svg
+        width="114.54525mm"
+        height="32.256931mm"
+        viewBox="0 0 114.54525 32.256931"
+        version="1.1"
+        id="svg1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:svg="http://www.w3.org/2000/svg">
+        <g
+            id="layer1"
+            transform="translate(-29.614161,-35.422748)">
+            <rect
+                class="square"
+                id="rect1"
+                x="30.011036"
+                y="35.819622"
+                width="32.431282"
+                height="31.463182"
+                ry="5.0400457" />
+            <rect
+                class="square"
+                id="rect2"
+                x="70.67115"
+                y="35.819622"
+                width="32.431282"
+                height="31.463182"
+                ry="5.0400457" />
+            <rect
+                class="square"
+                id="rect3"
+                x="111.33127"
+                y="35.819622"
+                width="32.431282"
+                height="31.463182"
+                ry="5.0400457" />
+        </g>
+    </svg>
+
+    <script>
+        document.getElementById('rect1').addEventListener('mouseover', function() {
+            this.style.fill = 'red'
